@@ -1,0 +1,193 @@
+<mxfile host="app.diagrams.net" modified="2024-01-04T02:45:06.241Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="gHMwX9tzN8-xzAVnBtpm" version="22.1.13" type="device">
+  <diagram name="Page-1" id="7wCmQJrUHB_TfGE5UTem">
+    <mxGraphModel dx="996" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-2" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;u&gt;Object Pool Design Pattern&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Before understand Object Pool lets understand &lt;b&gt;BlockingQueue&lt;/b&gt; Data Structure&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="75" y="100" width="870" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.407;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PL1PmwmTvMj0FiAkvggj-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="270" as="sourcePoint" />
+            <mxPoint x="230" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Principle&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="395" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.447;exitY=1.036;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PL1PmwmTvMj0FiAkvggj-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="473" y="150" as="sourcePoint" />
+            <mxPoint x="670" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Block take operation if queue is empty&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="245" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Block offer operation if queue is full&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="245" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.427;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PL1PmwmTvMj0FiAkvggj-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="249" y="270" as="sourcePoint" />
+            <mxPoint x="160" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="320" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="381" as="sourcePoint" />
+            <mxPoint x="70" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-15" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="380" as="sourcePoint" />
+            <mxPoint x="130" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-16" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="380" as="sourcePoint" />
+            <mxPoint x="210" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-17" value="&lt;b&gt;Here Queue is empty hence if you trying to fetch element&lt;br&gt;&amp;nbsp;using&amp;nbsp; take method but it will block the operation&lt;br&gt;&amp;nbsp;untill the data is added on Queue&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="390" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-18" value="EX :&amp;nbsp; queue.take()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.427;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="719" y="275" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-20" value="obj1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; obj2&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Obj3&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-21" value="&lt;b&gt;Here Queue is full hence if you trying to add element&lt;br&gt;&amp;nbsp;using&amp;nbsp; offer method then it will block the operation&lt;br&gt;&amp;nbsp;untill the data is empty on Queue&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="370" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-22" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="371" as="sourcePoint" />
+            <mxPoint x="640" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="371" as="sourcePoint" />
+            <mxPoint x="740" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-24" value="EX :&amp;nbsp; queue.offer(obj4)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="615" y="440" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="610" as="sourcePoint" />
+            <mxPoint x="235" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-25" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;u&gt;Object Pool Design Pattern&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="560" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="650" as="sourcePoint" />
+            <mxPoint x="280" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;It is a container that stored object which is very expensive to create&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="640" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-31" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Performance Increase&amp;nbsp;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="680" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="700" as="sourcePoint" />
+            <mxPoint x="280" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-35" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;u&gt;Working Principal of Object Pool&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="830" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-36" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="940" width="450" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-37" value="obj1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; obj2&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Obj3&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1050" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-38" value="" style="endArrow=none;html=1;rounded=0;exitX=0.191;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PL1PmwmTvMj0FiAkvggj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="1100" as="sourcePoint" />
+            <mxPoint x="650" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-39" value="" style="endArrow=none;html=1;rounded=0;exitX=0.191;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="759" y="1111" as="sourcePoint" />
+            <mxPoint x="760" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-52" value="Client 1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="950" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-54" value="Client 4" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1290" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-55" value="Client 2" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1070" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-56" value="Client 3" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1180" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-57" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PL1PmwmTvMj0FiAkvggj-52" target="PL1PmwmTvMj0FiAkvggj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="1100" as="sourcePoint" />
+            <mxPoint x="540" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-58" value="obj1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="968" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-59" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="PL1PmwmTvMj0FiAkvggj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1110" as="sourcePoint" />
+            <mxPoint x="540" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-60" value="obj2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1068" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-61" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="PL1PmwmTvMj0FiAkvggj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1215" as="sourcePoint" />
+            <mxPoint x="590" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-62" value="obj3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="305" y="1138" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-63" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="PL1PmwmTvMj0FiAkvggj-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1320" as="sourcePoint" />
+            <mxPoint x="590" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PL1PmwmTvMj0FiAkvggj-64" value="&lt;b&gt;now no object is present in object Pool hence this operation wait&lt;br&gt;until client 1 ,clinet 2 or client 3 return the release object&lt;br&gt;once the relase object got by object pool then&amp;nbsp;&lt;br&gt;add in queue and then return the object to client 4&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1300" width="390" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
