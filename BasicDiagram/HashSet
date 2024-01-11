@@ -1,0 +1,147 @@
+<mxfile host="app.diagrams.net" modified="2023-11-21T14:07:45.045Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="sPu41LiGkWIK6__RsksF" version="22.1.3" type="device">
+  <diagram name="Page-1" id="KfJ5YQvYahrylwOgszxS">
+    <mxGraphModel dx="5677" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-1" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;u&gt;Internal Working of HashSet&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="240" as="sourcePoint" />
+            <mxPoint x="240" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;HashMap&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="210" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-4" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 24px;&quot;&gt;Internally use&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="130" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-5" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;add()&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.704;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.287;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-1" target="bOkt-ZW8TE9herjLW7TC-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="230" as="sourcePoint" />
+            <mxPoint x="530" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.553;exitY=1.057;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="290" as="sourcePoint" />
+            <mxPoint x="220" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-8" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;put(k,v)&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="165" y="290" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.031;entryY=0.716;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.184;exitY=0.966;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-5" target="bOkt-ZW8TE9herjLW7TC-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="230" as="sourcePoint" />
+            <mxPoint x="530" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-11" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;HashSet&#39;s method add internally call put method of HashMap to add element&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="280" width="530" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-12" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;&lt;u&gt;Let&#39;s understand how element add in HashSet object&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="390" width="930" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-13" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="480" width="230" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-14" value="" style="endArrow=none;html=1;rounded=0;entryX=1.009;entryY=0.684;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bOkt-ZW8TE9herjLW7TC-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="200" as="sourcePoint" />
+            <mxPoint x="232.06999999999994" y="203.07999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-17" value="hash,&lt;br&gt;Key,&lt;br&gt;Value,&lt;br&gt;Next" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="bOkt-ZW8TE9herjLW7TC-13">
+          <mxGeometry x="55" y="220" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-15" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="640" y="778" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-16" value="Bucket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="860" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-18" value="Node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="775" y="808" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-20" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;data=put(e,PRESENT)&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="738" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297.5" y="778" as="sourcePoint" />
+            <mxPoint x="298" y="808" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-25" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;hashCode()&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="798" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-26" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297.5" y="838" as="sourcePoint" />
+            <mxPoint x="298" y="868" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-27" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Index calculate&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="870" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-28" value="let 0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="880" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.015;exitY=0.148;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-27" target="bOkt-ZW8TE9herjLW7TC-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="820" as="sourcePoint" />
+            <mxPoint x="590" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-33" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;add(e)&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="125" y="510" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.379;exitY=1.08;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.557;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-33" target="bOkt-ZW8TE9herjLW7TC-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="600" as="sourcePoint" />
+            <mxPoint x="163" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-35" value="&lt;b&gt;element add as a key&amp;nbsp;&lt;br&gt;and PRESENT constant&amp;nbsp;&lt;br&gt;add as a value on put method&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="583" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-37" value="&lt;b style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;if(data==null){&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;add element&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;}&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;else{&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;don&#39;t add element&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;}&lt;/font&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="185" y="940" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-42" value="&lt;b&gt;First line of add method 1&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="743" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-43" value="&lt;b&gt;second line2&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="55" y="950" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-44" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Note&lt;/font&gt;:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1130" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bOkt-ZW8TE9herjLW7TC-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="1175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-45" value="&lt;b&gt;put method of map interface return null or some value.&lt;br&gt;it return null if no duplicate key found on bucket,&lt;br&gt;and it return value if duplicate key is found on bucket&lt;br&gt;then that old key value return.&amp;nbsp;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1140" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-48" value="Example" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="1148" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-49" value="put(&quot;sandip&quot;,1);---&amp;gt;return null because no duplicate key&amp;nbsp;&lt;br&gt;present ye" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1143" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bOkt-ZW8TE9herjLW7TC-50" value="put(&quot;sandip&quot;,2)--&amp;gt;return 1 of old because key are same hence&amp;nbsp;&lt;br&gt;return old value and replace 2 instead of 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1190" width="350" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
