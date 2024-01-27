@@ -86,10 +86,15 @@ package com.test;
  * Order By 
  * *******************************************************************************
  * order rows in asc or desc order 
+ 
  * 
+    Find second largest salary of emp
+    
+    select salary from emp order by salary desc limit 1,1;
+    
  * note : order by always place at last of query
  * 
- * select * from table1 order by desc;
+ * select * from table1 order by column desc;
  * 
  * 
  * Group By 
