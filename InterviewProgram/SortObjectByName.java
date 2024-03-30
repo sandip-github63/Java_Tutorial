@@ -14,7 +14,7 @@ class Student{
 	
 	private String name;
 	
-    private String dept;
+        private String dept;
     
 	public Integer getId() {
 		return id;
@@ -61,7 +61,12 @@ public class SortObjectByName {
 		list.add(new Student(1,"arijit","IT"));
 		list.add(new Student(1,"modi","HR"));
 		
+		 // Sorting in natural order based on name
 		Collections.sort(list,Comparator.comparing(Student::getName));
+		
+		// Sorting in descending order based on name
+                Collections.sort(list, Comparator.comparing(Student::getName).reversed());
+
 		
 		list.forEach(e->System.out.println(e.getName()));
 		
